@@ -10,7 +10,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-white p-8 rounded-3xl">
+    <div className="bg-white p-8 rounded-3xl shadow-lg">
       <h2 className="font-bold mb-4">Send us a message</h2>
       <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
         <label htmlFor="name">

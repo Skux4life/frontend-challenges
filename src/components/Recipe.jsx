@@ -1,14 +1,12 @@
 import { CiStar } from "react-icons/ci";
+import coconutCoffee from "../assets/Coconut-Iced-Coffee-1584.jpg";
 
 const Recipe = () => {
   return (
     <div className="bg-black p-8 xl:mx-48">
       <div className="bg-white grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="relative">
-          <img
-            src="../assets/Coconut-Iced-Coffee-1584.jpg"
-            alt="Coconut-Iced-Coffee"
-          />
+          <img src={coconutCoffee.src} alt="Coconut-Iced-Coffee" />
           <div className="p-8 absolute bottom-20 font-mono text-white bg-black">
             <h2>Coconut Iced Coffee</h2>
           </div>

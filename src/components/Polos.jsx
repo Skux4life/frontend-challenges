@@ -1,3 +1,7 @@
+import bluePolo from "../assets/blue_polo.webp";
+import blackPolo from "../assets/black_polo.webp";
+import whitePolo from "../assets/white_polo.webp";
+
 const Polos = ({ selectedColor, setSelectedColor }) => {
   return (
     <>
@@ -5,27 +9,33 @@ const Polos = ({ selectedColor, setSelectedColor }) => {
         <img
           className={`hover:cursor-pointer rounded-2xl disabled:opacity-30 ${selectedColor == "blue" && "border-sky-200 border-2 hover:cursor-default"}`}
           width={100}
-          src="../assets/blue_polo.webp"
+          src={bluePolo.src}
           alt="blue polo"
           onClick={() => setSelectedColor("blue")}
         />
         <img
           className={`hover:cursor-pointer rounded-2xl disabled:opacity-30 ${selectedColor == "black" && "border-sky-200 border-2 hover:cursor-default"}`}
           width={100}
-          src="../assets/black_polo.webp"
+          src={blackPolo.src}
           alt="black polo"
           onClick={() => setSelectedColor("black")}
         />
         <img
           className={`hover:cursor-pointer rounded-2xl disabled:opacity-30 ${selectedColor == "white" && "border-sky-200 border-2 hover:cursor-default"}`}
           width={100}
-          src="../assets/white_polo.webp"
+          src={whitePolo.src}
           alt="white polo"
           onClick={() => setSelectedColor("white")}
         />
       </div>
       <div className="col-span-5">
-        <img src={`../assets/${selectedColor}_polo.webp`} alt="blue polo" />
+        {selectedColor == "blue" ? (
+          <img src={bluePolo.src} alt="blue polo" />
+        ) : selectedColor == "black" ? (
+          <img src={blackPolo.src} alt="black polo" />
+        ) : (
+          <img src={whitePolo.src} alt="white polo" />
+        )}
       </div>
     </>
   );

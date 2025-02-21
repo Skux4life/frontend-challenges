@@ -1,8 +1,8 @@
-import faceBookSvg from "./public/facebook.svg";
-import xSvg from "./public/x.svg";
-import linkedInSvg from "./public/linkedin.svg";
-import instagramSvg from "./public/ig.svg";
-import githubSvg from "./public/github.svg";
+import faceBookSvg from "../../public/facebook.svg";
+import xSvg from "../../public/x.svg";
+import linkedInSvg from "../../public/linkedin.svg";
+import instagramSvg from "../../public/ig.svg";
+import githubSvg from "../../public/github.svg";
 
 function ProfileCard() {
   return (

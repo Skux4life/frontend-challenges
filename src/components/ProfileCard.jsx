@@ -3,6 +3,7 @@ import xSvg from "../../public/x.svg";
 import linkedInSvg from "../../public/linkedin.svg";
 import instagramSvg from "../../public/ig.svg";
 import githubSvg from "../../public/github.svg";
+import moBro from "../assets/mo-bro.png";
 
 function ProfileCard() {
   return (
@@ -11,7 +12,7 @@ function ProfileCard() {
         <img
           className="inline rounded-full my-4 shadow-xl shadow-white"
           width={150}
-          src="./src/assets/mo-bro.png"
+          src={moBro.src}
           alt="mugshot"
         />
       </div>
